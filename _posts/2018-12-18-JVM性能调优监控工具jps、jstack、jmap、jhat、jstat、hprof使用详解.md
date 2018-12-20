@@ -66,7 +66,7 @@ jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具�
   得到进程ID为21711，第二步找出该进程最消耗的CPU的线程，可以使用ps -Lfp pid或者 ps -mp pid -o THREAD,tid,time 或者top -Hp pid。我这里用第三个，输出如下：
 
   ![](/img/jvm/ed8a4ea9f3b0afbe77b6bda8b3b157d.png)
-  <img src="/img/jvm/ed8a4ea9f3b0afbe77b6bda8b3b157d.png"/>
+  <img src="https://qianhuaipeng.github.io/img/jvm/ed8a4ea9f3b0afbe77b6bda8b3b157d.png"/>
 
   TIME列就是各个Java线程耗费CPU的时间，CPU时间最长的线程ID是21742的线程，用
         printf "%x\n" 21742
