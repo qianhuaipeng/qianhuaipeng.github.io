@@ -65,8 +65,8 @@ jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具�
   
   得到进程ID为21711，第二步找出该进程最消耗的CPU的线程，可以使用ps -Lfp pid或者 ps -mp pid -o THREAD,tid,time 或者top -Hp pid。我这里用第三个，输出如下：
 
-  ![](../img/jvm/ed8a4ea9f3b0afbe77b6bda8b3b157d.png)
-  <img src="../img/jvm/ed8a4ea9f3b0afbe77b6bda8b3b157d.png"/>
+  ![](/img/jvm/ed8a4ea9f3b0afbe77b6bda8b3b157d.png)
+  <img src="/img/jvm/ed8a4ea9f3b0afbe77b6bda8b3b157d.png"/>
 
   TIME列就是各个Java线程耗费CPU的时间，CPU时间最长的线程ID是21742的线程，用
         printf "%x\n" 21742
@@ -102,5 +102,7 @@ jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具�
      jmap [option] executable core
      jmap [option] [server-id@]remote-hostname-or-ip
    如果运行在64位jvm上，可能需要制定J-d64命令选项参数。
+
      jmap -permstat pid
 
+   打印进程的类加载器和类加载器加载的持久代对象信息，输出：类加载器名称、对象是否存活（不可靠）、对象地址、父类加载器、已加载的类大小等信息，如下图：
