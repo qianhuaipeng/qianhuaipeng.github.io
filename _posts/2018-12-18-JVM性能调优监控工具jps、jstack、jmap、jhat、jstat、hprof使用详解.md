@@ -94,7 +94,7 @@ jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具�
 
  它是轮询任务的空闲等待代码，上面的sigLock.wait(timeUntilContinue)就对应了前面的Object.wait()。
 
- ### C、jmap（Memory Map）和 jhat（Java Heap Analysis Tool）
+### C、jmap（Memory Map）和 jhat（Java Heap Analysis Tool）
   jmap用来查看堆内存使用情况，一般结合jhat使用。
   jmap语法格式如下：
 
