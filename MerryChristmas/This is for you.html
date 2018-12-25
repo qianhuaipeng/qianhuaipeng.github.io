@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
-    <title>Merry Christmas&This is for you 王水波</title>
+    <title>Merry Christmas</title>
     <style type="text/css">
         body {
     background: #000;
@@ -175,7 +175,7 @@ a{ text-decoration:none;}
 <script src="../../js/jeasyui/jquery.easyui.min.js" charset="utf-8" type="text/javascript"></script>
 <body>
     <div id="snow"></div>
-<svg width="1163px" height="1296px" viewBox="63 28 1163 1296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="svgTree" width="1163px" height="1296px" viewBox="63 28 1163 1296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <rect id="base" stroke="none" fill="#8E550F" fill-rule="evenodd" x="541" y="1153" width="242" height="171"></rect>
     <path d="M674.585992,142 C674.585992,142 614.37253,171.447011 614.007148,183.025055 C613.655271,194.17517 732.364815,191.223748 732.124198,203.082398 C731.856523,216.274629 566.053305,249.975836 565.560219,263.987246 C565.097978,277.122143 742.572873,267.189846 742.397936,280.89442 C742.17132,298.647452 546.557216,341.685733 545.869285,360.348146 C545.226266,377.792192 802.005422,381.910666 801.965627,399.858494 C801.915908,422.281727 492.722165,455.227875 491.345671,478.289129 C489.650945,506.681909 863.373944,515.739492 864.402732,544.433154 C865.213839,567.055574 404.664506,616.972084 402.836399,639.690068 C400.987439,662.667191 970.476589,666.605333 972.303147,689.017331 C974.616064,717.396994 339.30716,755.255509 332.795111,782.722953 C325.084507,815.245833 1040.3809,843.161248 1049.53938,873.049996 C1059.62067,905.950328 282.753182,956.579988 259.289589,985.385392 C239.204112,1010.0436 1122.69493,1032.86137 1145.57526,1052.19351 C1168.04375,1071.17768 429.514311,1120.47693 332.795111,1132.50406 C74.9070423,1164.5727 103.818505,1148.69062 103.818505,1148.69062"
     id="tree" stroke="#29882F" stroke-width="22" stroke-linecap="square" fill="none"></path>
@@ -200,7 +200,7 @@ a{ text-decoration:none;}
     <circle id="red1" stroke="none" fill="#C30E0E" fill-rule="evenodd" cx="569" cy="260" r="40"></circle>
 </svg>
         <audio id="audio" loop>
-          <source src="audio/MerryChristmas-wangshuibo.mp3" type="audio/mpeg">
+          <source src="audio/MerryChristmas-baby.mp3" type="audio/mpeg">
           您的浏览器不支持 audio 元素。
         </audio>
         <div class="slide" style="display: none;">
@@ -220,6 +220,8 @@ a{ text-decoration:none;}
                 <li></li>
                 <li></li>
                 <li></li>
+                <!-- <li><a href="javascript:void()"><img src="img/5.jpg"></a></li> -->
+               <!--也可以放缩略图,需要修改上面的CSS-->
                </ul>
               </div>
               <div class="clear"></div>
@@ -257,14 +259,13 @@ a{ text-decoration:none;}
     var time = 3 * 1000;
     setTimeout(function(){
         alert("呆子祝你圣诞节快乐！Merry Christmas!");
-        if (confirm("我们来玩个游戏好吗？答错了游戏就结束了哦！")) {
-            game();
-        }
+        alert("This is for your! My Precious！");
+        playAudio();
     }, time);
     function prompt(msg, fun){
         $.messager.prompt({
             width: 300,
-            height: 200,
+            height: 200, 
             title: "",
             msg: msg,
             resizable:false,
