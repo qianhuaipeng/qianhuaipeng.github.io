@@ -169,7 +169,7 @@ a{ text-decoration:none;}
 .clear{ display:block; height:0px; line-height:0px; font-size:0px;clear:both;}
 </style>
 </head>
-<script src="http://wow.techbrood.com/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
 <link href="../../js/jeasyui/themes/default/easyui.css" rel='stylesheet' type='text/css'/>
 <link href="../../js/jeasyui/themes/extend.css" rel="stylesheet" type='text/css'>
 <script src="../../js/jeasyui/jquery.easyui.min.js" charset="utf-8" type="text/javascript"></script>
@@ -200,7 +200,7 @@ a{ text-decoration:none;}
     <circle id="red1" stroke="none" fill="#C30E0E" fill-rule="evenodd" cx="569" cy="260" r="40"></circle>
 </svg>
         <audio id="audio" loop>
-          <source src="audio/merry christmas14.mp3" type="audio/mpeg">
+          <source src="audio/MerryChristmas-baby.mp3" type="audio/mpeg">
           您的浏览器不支持 audio 元素。
         </audio>
         <div class="slide" style="display: none;">
@@ -288,16 +288,7 @@ a{ text-decoration:none;}
         });
     }
     function game(){
-        // playAudio()
         $.messager.defaults = { ok: "确认", cancel: "取消" };
-        // $.messager.prompt({
-        //     width: 300,
-        //     height: 200,
-        //     title: "游戏",
-        //     msg: "请输入你的名字",
-        //     fn: function(r){
-        //     }
-        // });
         prompt("请输入你的名字。",function(r){
             if (r == '王水波'){
                     $.messager.defaults = { ok: "是", cancel: "否" };
@@ -309,8 +300,10 @@ a{ text-decoration:none;}
                                     alert("哈哈哈哈，果然是傻子？问你一个很严肃的问题？");
                                     prompt('我是你的什么？', function(r){
                                         if (r == '呆子'){
+                                            $.messager.defaults = { ok: "好", cancel: "不好" };
                                             jeasyui_confirm('做我的宝贝好吗？', function(r){
                                                 if (r){
+                                                     alert("This is for your! My Precious！");
                                                     playAudio();
                                                 } else {
                                                     replay();
