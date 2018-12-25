@@ -1,0 +1,50 @@
+---
+layout:     post
+title:      Merry Christmas
+subtitle:   Merry Christmas
+date:       2018-12-25
+author:     alan.peng
+header-img: img/post-bg-2015.jpg
+catalog: true
+tags:
+    - MyBlog
+---
+
+> “🙉🙉🙉 ”
+
+
+## 前言
+
+作为一名合格程序员应该要有一个属于自己的博客，平时工作学习中记录下所学的知识，不断积累。
+
+<p id = "build"></p>
+---
+
+## 正文
+
+接下来说说搭建这个博客的技术细节。  
+
+首先要有自己的GitHub账号，然后就可以搭建啦。我是直接在简书上看到的方法，[利用 GitHub Pages 快速搭建个人博客](https://www.jianshu.com/p/e68fba58f75c)。
+
+主题直接Download [qiubaiying的GitHub地址](https://github.com/qiubaiying/qiubaiying.github.io)在进行修改，简单粗暴。
+
+
+其优点非常明显： 
+
+* **Markdown** 带来的优雅写作体验
+* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
+* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
+	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了 
+* Jekyll 的自定制非常容易，基本就是个模版引擎
+
+
+
+
+## 后记
+
+最后，感谢 qiubaiying 提供的的 [Blog 主题](https://github.com/qiubaiying/qiubaiying.github.io)
+
+
+——  后记于 2018.11.29
+
+
