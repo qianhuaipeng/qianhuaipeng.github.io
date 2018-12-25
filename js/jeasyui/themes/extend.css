@@ -1,0 +1,51 @@
+/*------------重写------*/
+/* default/images/combo_arrow_updown.png */
+/*.combo-arrow {
+  width: 18px;
+  height: 26px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  float:right;
+  background: url(default/images/combo_arrow_updown.png) no-repeat -5px 0px;
+}
+.combo{
+  border: none;
+  vertical-align:top;
+  padding-left:10px;
+  width:155px;
+  height:28px!important;
+}
+.combo-text {
+  text-align: left;
+   background:white;
+}
+
+.combobox-item {
+  font-size: 12px;
+  padding: 5px 0 5px 10px;
+  cursor: pointer;
+}*/
+
+.combo-arrow {
+  float:right;
+  background:url(default/images/icon_gray.png) no-repeat center center;
+}
+
+.combo{
+  border: none;
+  padding-left:10px;
+  vertical-align:top;
+}
+
+.combo-text {
+  text-align: left;
+  background: white;
+}
+
+.combobox-item {
+  font-size: 12px;
+  padding: 5px 0 5px 10px;
+  cursor: pointer;
+} 
