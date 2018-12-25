@@ -348,10 +348,25 @@ a{ text-decoration:none;}
          
     }
     function playAudio(){
-        document.getElementById('audio').play();
-        $("#audio").attr("controls","controls");
         $(".slide").show();
         $("#base").hide();
+        setTimeout(function(){
+            document.getElementById('audio').play();
+            $("#audio").attr("controls","controls");
+        },3000);
+    }
+
+    function printLyric(){
+        console.log("我的宝贝宝贝 给你一点甜甜 让你今夜都好眠");
+        console.log("我的小鬼小鬼 逗逗你的眉眼 让你喜欢这世界");
+        console.log("哇啦啦啦啦啦 我的宝贝 倦的时候有个人陪");
+        console.log("哎呀呀呀呀呀 我的宝贝 要你知道你最美");
+        console.log("我的宝贝宝贝 给你一点甜甜 让你今夜很好眠");
+        console.log("我的小鬼小鬼 逗逗你的小脸 让你喜欢整个明天");
+        console.log("哗啦啦啦啦啦 我的宝贝 倦的时候有个人陪");
+        console.log("哎呀呀呀呀呀 我的宝贝 要你知道你最美");
+        console.log("哗啦啦啦啦啦 我的宝贝 孤单时有人把你想念");
+        console.log("哎呀呀呀呀呀 我的宝贝 要你知道你最美");
     }
 </script>
 </html>
