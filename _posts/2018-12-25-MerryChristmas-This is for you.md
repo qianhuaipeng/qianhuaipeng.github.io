@@ -13,5 +13,5 @@ tags:
 
 
 ## 今天圣诞节祝，大家圣诞节快乐。
-![](img/others/MerryChristmas.jpg)
+![](/img/others/MerryChristmas.jpg)
 
