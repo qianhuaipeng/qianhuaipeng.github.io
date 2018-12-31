@@ -7,7 +7,6 @@ author:     alan.peng
 header-img: img/Merry Christmas.jpg
 catalog: true
 tags:
-    - Merry Christmas
     - 杂记
 ---
 
