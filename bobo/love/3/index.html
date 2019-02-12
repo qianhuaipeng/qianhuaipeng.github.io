@@ -119,7 +119,13 @@ function updateNumbers() {
 </script> 
     <!--[if lte IE 7]>
     <script type="text/javascript" src="/static/js/degrade.js"></script>
-    <![endif]--> 
+    <![endif]-->
+    <script>
+        window.onerror = function (errorMessage, scriptURI, lineNumber,columnNumber,errorObj) {
+            var errorMsg = "错误信息：" + errorMessage + "\n" + "出错文件：" + scriptURI + "\n" + "出错行号：" + lineNumber + "\n" + "出错列号：" + columnNumber + "\n" + "错误详情：" +  errorObj;
+            alert(errorMessage);
+        }
+    </script>
   </head> 
   <body style="background-color: #e7a3c1"> 
     <div class="container" style="position: absolute; left: 482px; top: 181.5px;">
@@ -128,7 +134,7 @@ function updateNumbers() {
         <span class="days-number">38</span>
         <span class="days-label">days</span>
       </div>
-      <div class="seconds">10 hours 24 minutes 30 seconds</div>
+      <div class="seconds">20 hours 24 minutes 30 seconds</div>
     </div>
    
 
