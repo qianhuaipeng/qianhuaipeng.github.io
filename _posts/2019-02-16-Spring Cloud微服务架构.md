@@ -4,7 +4,7 @@ title:      Spring Cloud微服务架构
 subtitle:    Spring Cloud微服务架构  
 date:       2019-02-16  
 author:     alan.peng  
-header-img: img/post-bg-js-version.jpg  
+header-img: img/spring/springcloud/logo.jpeg  
 catalog: true  
 tags:
     - Java  
