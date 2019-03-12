@@ -53,6 +53,18 @@ tags:
 ### Spring Cloud Security
 
 
+### 和Spring Boot是什么关系
+Spring Boot 是Spring的一套快速配置脚手架，我们可以基于Spring Boot快速开发单个微服务，Spring Cloud是一个基于Spring Boot实现的云应用开发工具；Spring Boot专注于快速、方便集成的单个个体，Spring Cloud是关注全局的服务治理框架；Spring Boot使用默认大于配置的理念，很多集成方案已经帮你选好了，能不配置就不用配置，Spring Cloud是基于Spring Boot来实现。
+> Spring > Spring Boot > Spring Cloud
+
+### Spring Cloud 的优势
+微服务包括dubbo、Kubernates等等
+- 产于Spring大家族，Spring在企业级开发框架里面无人能敌，社区完善。dubbo由阿里团队开发
+- 有Spring Boot 这个独立干将可以省很多事
+- 作为一个微服务治理的大家伙，考虑很全面，几乎所有的服务治理的方方面面都考虑到了
+- Spring Cloud社区活跃度很高，教程丰富
+- 轻轻松松几行代码就能完成熔断、负载均衡、服务中心注册与发现等等功能
+
 
 
 
