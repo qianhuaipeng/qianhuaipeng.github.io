@@ -26,7 +26,7 @@ tags:
 目前主流的微服务框架： 阿里的Dubbo、Spring Cloud、Hessian
 
 ### 2、Spring Cloud 是什么鬼？
-Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统的开发。如服务发现与注册、配置中心、消息总线、负载均衡、断路由、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。Sprig并没有重复造轮子，它只是将目前各家公司开发的比较成熟、经得起实际考验的服务框架组合起来，通过Spring Boot风格进行再封装屏蔽掉复杂的配置和实现原理，最终给开发者留出一套简单易懂、易部署、易维护的分布式系统开发工具包。
+Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统的开发。如服务发现与注册、配置中心、消息总线、负载均衡、断路由、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。Spring并没有重复造轮子，它只是将目前各家公司开发的比较成熟、经得起实际考验的服务框架组合起来，通过Spring Boot风格进行再封装屏蔽掉复杂的配置和实现原理，最终给开发者留出一套简单易懂、易部署、易维护的分布式系统开发工具包。
 
 微服务是可以独立部署、水平扩展、独立访问的服务单元，Spring Cloud就是这些微服务的大管家。采用了微服务这种架构之后，项目的数量会非常多，Spring Cloud作为大管家需要管理好这些微服务，自然需要许多小弟来帮忙。
 
@@ -50,10 +50,11 @@ Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便
 ### Spring Cloud Bus
 事件、消息总线，用于在集群中传播状态变化，可以与Spring Cloud Config联合实现热部署。确保各个小弟之间的消息保持畅通。
 
-### Spring Cloud Security
+### Spring Cloud Security     
 
 
-### 和Spring Boot是什么关系
+
+### Spring Cloud 和 Spring Boot是什么关系
 Spring Boot 是Spring的一套快速配置脚手架，我们可以基于Spring Boot快速开发单个微服务，Spring Cloud是一个基于Spring Boot实现的云应用开发工具；Spring Boot专注于快速、方便集成的单个个体，Spring Cloud是关注全局的服务治理框架；Spring Boot使用默认大于配置的理念，很多集成方案已经帮你选好了，能不配置就不用配置，Spring Cloud是基于Spring Boot来实现。
 > Spring > Spring Boot > Spring Cloud
 
